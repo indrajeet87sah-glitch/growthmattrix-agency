@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #0DAC5A;
+  --color-brand-green-hover: #0DAC5A;
+  --color-brand-dark: #000000;
+  --color-brand-mint: #EFF6F3;
+  --font-sora: "Sora", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body, p, a, span, button {
+  font-family: var(--font-sora);
+}
+@layer base {
+  body {
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+@layer components {
+  .gm-container {
+    @apply max-w-[1330px] mx-auto px-4 w-full;
+  }
+}
